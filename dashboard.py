@@ -1,6 +1,7 @@
 from tkinter import*
 from PIL import Image,ImageTk  #pip install pillow
 from course import CourseClass
+from student import StudentClass
 class RMS:
     def __init__(self,root):
         self.root=root
@@ -39,7 +40,7 @@ class RMS:
         self.lbl_result.place(x=1100,y=530,width=300,height=100)
        
        
-       
+        
        
        
        
@@ -52,6 +53,11 @@ class RMS:
     def add_course(self):
         self.new_win=Toplevel(self.root)
         self.new_obj=CourseClass(self.new_win)  
+
+    
+    def add_student(self):
+        self.new_win=Toplevel(self.root)
+        self.new_obj=StudentClass(self.new_win)  
 
 
 
